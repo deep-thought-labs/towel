@@ -1,0 +1,26 @@
+{
+  "name": "@deep-thought-labs/towel",
+  "version": "1.0.0",
+  "description": "TOWEL — DeFi utility token on Infinite Drive",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deep-thought-labs/towel.git"
+  },
+  "files": ["docs/Towel.abi.json", "docs/using-towel.md", "LICENSE", "NOTICE"],
+  "scripts": {
+    "preinstall": "node scripts/check-node.js",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "export": "node scripts/export-release.js",
+    "prepublishOnly": "npm run export"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "6.1.2",
+    "@openzeppelin/contracts": "5.6.1",
+    "hardhat": "2.29.1"
+  }
+}

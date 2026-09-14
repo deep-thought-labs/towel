@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Hardhat
+artifacts/
+cache/
+typechain-types/
+coverage/
+coverage.json
+
+# Production export (npm publish / release assets)
+dist/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.log
